@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Prompt Generator for Study</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎓 AI Prompt Generator for Study</h1>
+  <div class="header-btns">
+    <button onclick="copyPrompt()">📋 Copy</button>
+    <button onclick="clearAll()">🗑 Clear</button>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="active" onclick="setTab('solve')">Solve</button>
+  <button onclick="setTab('explain')">Explain</button>
+  <button onclick="setTab('summarize')">Summarize</button>
+  <button onclick="setTab('practice')">Practice</button>
+  <button onclick="setTab('exam')">Exam Plan</button>
+</nav>
+
+<main>
+  <div id="formArea"></div>
+
+  <section class="output">
+    <h3>Generated Prompt</h3>
+    <textarea id="outputPrompt" placeholder="Prompt sẽ hiện ở đây..."></textarea>
+  </section>
+</main>
+
+<script src="prompts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
